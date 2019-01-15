@@ -82,8 +82,48 @@ body {
   .sec-body>p{
       text-align: justify;
   }
-  button{
+  .sec-body>ul{
+   margin-top: 15px;
+   padding: 0;
+  }
+  .sec-body li{
+    list-style: none;
+    width: 100%;
+    height: ;
+    border: .5px solid transparent;
+    position: relative;
+    padding-left: 30px;
+  }
+  .sec-body li:hover{
+    background: #f1c232;
+  }
+  .sec-body li::before{
+    content: '';
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: 5px;
+    background-image: url('img/flag/Flag_of_Cameroon.svg');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: contain;
+    margin: 10px 0px 
+  }
+  .sec-body li.gre::before{
+    background-image: url('img/flag/Flag_of_the_United_Kingdom.svg');
+  }
+  .sec-body li.tun::before{
+    background-image: url('img/flag/Flag_of_Tunisia.svg.png');
+  }
+  .sec-body li.sen::before{
+    background-image: url('img/flag/Flag_of_Senegal.svg');
+  }
+  .sec-body li.fra::before{
+    background-image: url('img/flag/Flag_of_France.svg');
+  }
+  .button{
       background: #f1c232;
+      width: 100px;
       color: #0c343d;
       padding: 5px;
       margin: 1px;
