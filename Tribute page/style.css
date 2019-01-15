@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  opacity: .9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #0c343d;
+  color: #eee;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*--topbar fixed or sticky--*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #264349;
+  opacity: .9;
+  color: #f1c232;
+  border-bottom: .5px solid #f1c232;
+}
+
+.head-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.head-navbar>ul {
+
+}
+#image{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+  }
+  #img-caption{
+      font-size: 28px;
+      color: #f1c232;
+      text-align: center;
+      padding: 5px;
+  }
+  #img-caption .small{
+      font-size: 18px;
+      display: block;
+     
+  }
+
+.bibliography,.awords,.time-line{
+      box-sizing: border-box;
+     background:rgb(195, 195, 195) ;
+     border-radius: 5px;
+     box-shadow: 0px 1px 1px 2px black;
+     width: 95vw;
+     margin: 13px auto 0px;
+     padding: 5px 20px;
+  }
+  .sec-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: #0c343d;
+      font-weight: 800;
+  }
+  .icon-img{
+      height: 54px;
+      width: 54px;
+  }
+  .sec-body{
+      margin-top: -20px;
+  }
+  .sec-body>p{
+      text-align: justify;
+  }
+  button{
+      background: #f1c232;
+      color: #0c343d;
+      padding: 5px;
+      margin: 1px;
+      position: relative;
+      left: 250px;
+  }
+@media (max-width:415px) {
+  .head-navbar {
+      display: none;
+  }
+
+  .btn-menu {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: #f1c232;
+  }
+
+  .btn-menu::before {
+      position: absolute;
+      top: -10px;
+      content: '';
+      display: block;
+      width: 30px;
+      height: 4px;
+      background: #f1c232;
+  }
+
+  .btn-menu::after {
+      position: absolute;
+      top: 10px;
+      content: '';
+      display: block;
+      width: 25px;
+      height: 4px;
+      background: #f1c232;
+  }
+  .btn-menu:active {
+      position: relative;
+      display: block;
+      width: 20px;
+      height: 4px;
+      background: #f1c232;
+      margin-right: 30px;
+  }
+  .profile{
+      display: block;
+      width: 70%;
+      margin:40px auto 85px;
+  }
+  .profile-title{
+      display: block;
+      text-align: center;
+      margin: 20px;
+  }
+
+  .profile-img{
+      height: 200px;
+      width: 200px;
+      margin: auto;
+  }
+ 
+  .profile-desc{
+      display: none;
+  }
+  
+  
+}
