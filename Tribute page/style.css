@@ -28,14 +28,33 @@ body {
   color: #f1c232;
   border-bottom: .5px solid #f1c232;
 }
+.profile{
+  display: block;
+  width: 70vw;
+  margin:40px auto 85px;
+}
+.profile-title{
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
 
+.profile-img{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.profile-desc{
+  text-shadow: 0px 2px 1px 0px rgba(0,0,0,.9);
+  width: 95vw;
+  margin: 13px auto 0px;
+  padding: 5px 20px 35px;
+  position: relative;
+}
 .head-title {
   font-size: 24px;
   font-weight: 700;
-}
-
-.head-navbar>ul {
-
 }
 #image{
       height: 200px;
@@ -57,13 +76,13 @@ body {
   }
 
 .bibliography,.awords,.time-line{
-      box-sizing: border-box;
      background:rgb(195, 195, 195) ;
      border-radius: 5px;
      box-shadow: 0px 2px 1px 0px rgba(0,0,0,.9);
      width: 95vw;
      margin: 13px auto 0px;
-     padding: 5px 20px;
+     padding: 5px 20px 35px;
+     position: relative;
   }
   .sec-head{
       display: flex;
@@ -121,18 +140,53 @@ body {
   .sec-body li.fra::before{
     background-image: url('img/flag/Flag_of_France.svg');
   }
+  .sec-body li.uk::before{
+    background-image: url('img/flag/Flag_of_the_United_Kingdom.svg');
+  }
+  .sec-body li.mor::before{
+    background-image: url('img/flag/Flag_of_Morocco.svg');
+  }
+  .sec-body li.nig::before{
+    background-image: url('img/flag/Flag_of_Nigeria.svg.png');
+  }
+  .sec-body li.us::before{
+    background-image: url('img/flag/Flag_of_the_United_States.svg');
+  }
+  .sec-body li.chi::before{
+    background-image: url('img/flag/Flag_of_the_People\'s_Republic_of_China.svg');
+  }
   .button{
       background: #f1c232;
       width: 100px;
       color: #0c343d;
       padding: 5px;
       margin: 1px;
-      position: relative;
-      top: -10px;
-      left: 200px;
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
       border: 1px solid transparent;
       box-shadow: 1px 1px 2px rgba(0,0,0,.8);
   }
+  .time-line .time-title {
+      width: 50px;
+      height: 50px;
+      background: #f1c232;
+      color: #0c343d;
+      display: block;
+      border-radius: 50%  ;
+      -webkit-border-radius: 50%  ;
+      -moz-border-radius: 50%  ;
+      -ms-border-radius: 50%  ;
+      -o-border-radius: 50%  ;
+      text-align: center;
+      padding: 10px 0px;;
+      margin: auto;
+  }
+  .time-line .time-desc {
+    border-left: 10px solid #f1c232;
+    padding-left: 10px;
+}
+
 @media (max-width:415px) {
   .head-navbar, .sec-hidden {
       display: none;
@@ -173,22 +227,6 @@ body {
       background: #f1c232;
       margin-right: 30px;
   }
-  .profile{
-      display: block;
-      width: 70%;
-      margin:40px auto 85px;
-  }
-  .profile-title{
-      display: block;
-      text-align: center;
-      margin: 20px;
-  }
-
-  .profile-img{
-      height: 200px;
-      width: 200px;
-      margin: auto;
-  }
  
   .profile-desc{
       display: none;
@@ -196,4 +234,33 @@ body {
   
  
   
+}
+@media (min-width:416px) {
+  .header {
+   flex-direction: column;
+  }
+  
+  .head-navbar > ul {
+    margin: 0;
+  
+    display: flex;
+    justify-content: center;
+  }
+  .head-navbar li {
+    list-style: none;
+    padding: 5px 10px 2px;
+  }
+  .head-navbar li a {
+    text-decoration: none;
+    color: #f1c232;
+    opacity: .2;
+  }
+  .head-navbar li a:hover {
+    opacity: .8;
+  }
+}
+@media (min-width:640px) {
+  .header {
+   flex-direction: row;
+  }
 }
